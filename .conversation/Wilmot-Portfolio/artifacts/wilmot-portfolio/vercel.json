@@ -1,0 +1,7 @@
+{
+  "framework": "vite",
+  "installCommand": "cd ../.. && pnpm install --frozen-lockfile",
+  "buildCommand": "cd ../.. && pnpm --filter @workspace/wilmot-portfolio run build",
+  "outputDirectory": "dist/public",
+  "cleanUrls": true
+}

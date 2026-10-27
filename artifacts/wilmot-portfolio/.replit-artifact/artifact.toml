@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Wilmot Kerkulah — Portfolio"
+description = "A personal portfolio website for Wilmot Kerkulah, presenting his experience, skills, and professional work based on his CV."
+version = "1.0.0"
+id = "artifacts/wilmot-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24260
+
+[services.development]
+run = "pnpm --filter @workspace/wilmot-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wilmot-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/wilmot-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24260"
+BASE_PATH = "/"

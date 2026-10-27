@@ -52,7 +52,7 @@ function PortfolioSite() {
 
       <header className="site-header">
         <div className="container header-inner">
-          <a className="wordmark" href="#top">
+          <a className="wordmark" href="#top" aria-label="Wilmot Kerkulah home">
             Wilmot Kerkulah
           </a>
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -66,11 +66,11 @@ function PortfolioSite() {
             <summary>Menu</summary>
             <nav aria-label="Mobile navigation">
               {navigation.map((item) => (
-                <a key={item.href} href={item.href}>
+                <a key={item.href} href={item.href} onClick={(event) => event.currentTarget.closest('details')?.removeAttribute('open')}>
                   {item.label}
                 </a>
               ))}
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={(event) => event.currentTarget.closest('details')?.removeAttribute('open')}>Contact</a>
             </nav>
           </details>
           <a className="header-contact" href="#contact">
@@ -82,22 +82,31 @@ function PortfolioSite() {
       <main id="main">
         <section className="hero" aria-labelledby="hero-title">
           <div className="container hero-content">
-            <p className="hero-location">
-              {profile.location} <span aria-hidden="true">/</span> {profile.nationality}
-            </p>
-            <h1 id="hero-title">{profile.name}</h1>
-            <p className="hero-headline">{profile.headline}</p>
-            <p className="hero-summary">
-              More than five years of experience across community development, ICT,
-              education, communications and programme leadership.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#experience">
-                View experience
-              </a>
-              <a className="button button-outline" href={`mailto:${profile.contact.email}`}>
-                Get in touch
-              </a>
+            <div className="hero-copy">
+              <p className="hero-location">
+                {profile.location} <span aria-hidden="true">/</span> {profile.nationality}
+              </p>
+              <h1 id="hero-title">{profile.name}</h1>
+              <p className="founder-line">Founder of iTech Network Africa</p>
+              <p className="hero-headline">{profile.headline}</p>
+              <p className="hero-summary">
+                More than five years of experience across community development, ICT,
+                education, communications and programme leadership.
+              </p>
+              <div className="hero-actions">
+                <a className="button button-primary" href="#experience">
+                  View experience
+                </a>
+                <a className="button button-outline" href={`mailto:${profile.contact.email}`}>
+                  Get in touch
+                </a>
+              </div>
+            </div>
+            <div className="portrait-wrap">
+              <div className="portrait-frame">
+                <img src="/images/wilmot-kerkula.jpg" alt="Portrait of Wilmot Kerkulah" fetchPriority="high" />
+              </div>
+              <span className="portrait-caption">Community · Technology · Service</span>
             </div>
           </div>
         </section>

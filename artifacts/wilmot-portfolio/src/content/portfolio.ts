@@ -1,11 +1,11 @@
 export const profile = {
-  name: 'Wilmot Benedict Suah Kerkulah',
+  name: 'Wilmot Kerkulah',
   location: 'Monrovia, Montserrado County, Liberia',
   nationality: 'Liberian',
   headline:
     'Community development leader, programme manager and ICT consultant; studying data science and analytics.',
   summary: [
-    'Wilmot is a mission-driven professional with more than five years of experience across community development, ICT consultancy, graphic design, financial management and programme leadership in Liberia.',
+    'Wilmot is the Founder of iTech Network Africa and a mission-driven professional with more than five years of experience across community development, ICT consultancy, graphic design, financial management and programme leadership in Liberia.',
     'His work includes community mobilisation, behaviour-change communication and sustainable programmes for vulnerable populations. He has led initiatives across health, education and youth empowerment, working with government, NGOs and international partners.',
     'His technical practice spans ICT advisory, digital literacy, web development and data analytics, alongside graphic design and brand communication. He is pursuing degrees in Data Science & Analytics and Theology and continues to build his skills through professional training.',
     'He brings together technical knowledge, community relationships and programme leadership, with a focus on technology, education and inclusive development.',

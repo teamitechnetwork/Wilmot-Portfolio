@@ -1,0 +1,1 @@
+- [Portfolio naming rule](portfolio-naming-rule.md) — Keep the public-facing name to the short form; do not include middle names.

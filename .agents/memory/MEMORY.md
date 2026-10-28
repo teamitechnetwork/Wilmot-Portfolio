@@ -1,1 +1,2 @@
 - [Portfolio naming rule](portfolio-naming-rule.md) — Keep the public-facing name to the short form; do not include middle names.
+- [Portfolio color balance](portfolio-color-balance.md) — Use deep teal with selective off-white surfaces; avoid an all-black page and orange.

@@ -86,9 +86,17 @@ function PortfolioSite() {
               <p className="hero-location">
                 {profile.location} <span aria-hidden="true">/</span> {profile.nationality}
               </p>
-              <h1 id="hero-title">{profile.name}</h1>
+              <h1 id="hero-title">
+                <span className="hero-name-first">Wilmot</span>
+                <span className="hero-name-last"> Kerkulah</span>
+              </h1>
               <p className="founder-line">Founder of iTech Network Africa</p>
-              <p className="hero-headline">{profile.headline}</p>
+              <p className="hero-headline">
+                <span className="headline-muted">Community development leader,</span>
+                <span className="headline-bright">
+                  <span className="headline-gradient"> programme manager and ICT consultant</span>; studying data science and analytics.
+                </span>
+              </p>
               <p className="hero-summary">
                 More than five years of experience across community development, ICT,
                 education, communications and programme leadership.
@@ -107,6 +115,20 @@ function PortfolioSite() {
                 <img src="/images/wilmot-kerkula.jpg" alt="Portrait of Wilmot Kerkulah" fetchPriority="high" />
               </div>
               <span className="portrait-caption">Community · Technology · Service</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="dream-section" aria-label="A simple principle">
+          <div className="container">
+            <div className="dream-feature">
+              <div className="dream-copy">
+                <p className="eyebrow">A simple principle</p>
+                <h2>Dream big.<br /><span>Start small. Act now.</span></h2>
+              </div>
+              <div className="dream-art">
+                <img src="/images/dream-big-start-small.jpg" alt="" loading="lazy" />
+              </div>
             </div>
           </div>
         </section>
